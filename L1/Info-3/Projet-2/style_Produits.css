@@ -1,0 +1,67 @@
+*{box-sizing: border-box}
+body{background-image: url("Image/Background.jpg"); background-attachment: fixed;}
+#Nav{width: 100%; display: flex; justify-content: space-evenly;}
+
+.container {display: flex;}
+
+.column1 {
+    flex: 1;
+    text-align: center;
+    border: 2px solid #42D6CA;
+    margin: 15px;
+    padding: 15px;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #42D6CA;
+    margin: 15px;
+}
+
+.icone {max-width: 250px; max-height: 250px;}
+
+h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    color: #42D6CA;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.button {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    margin: 15px;
+    background-color: #42D6CA;
+    border: 2px solid #42D6CA;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    width: 300px;
+    transition: all 0.4s;
+}
+
+.button:hover {background-color: transparent; color: #42D6CA;}
+
+.disabled {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    margin: 15px;
+    background-color: #42D6CA;
+    border: 2px solid #42D6CA;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-style: italic;
+}
+
+.text {
+    font-family: 'Cinzel', serif;
+    color: #42D6CA;
+    text-align: center;
+}

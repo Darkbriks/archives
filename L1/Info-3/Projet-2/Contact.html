@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Kronos 44</title>
+    <link rel="stylesheet" type="text/css" href="style_Contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Script.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <ul id="Nav" class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="Presentation.html">Presentation</a></li>
+            <li class="nav-item"><a class="nav-link" href="Produits.html">Produits</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="Content1">
+    <h1>Informations sur notre studio</h1>
+    <p>Bienvenue sur notre site web ! Nous sommes un studio qui crée des jeux vidéos de qualité, et qui vous correspondent.</p>
+    <p>Voici quelques informations sur notre studio :</p>
+    <ul>
+        <li>Nom : Darkbriks Studio</li>
+        <li>Numéro de téléphone : 03 99 99 99 99</li>
+        <li>Mail : contact@darkbriks-studio.fr</li>
+        <li>Adresse : 28 Rue Armand Carrel, 93100 Montreuil, France</li>
+        <li>Heures d'ouverture : du lundi au samedi de 8h à 20h</li>
+    </ul>
+    <p>Pour nous contacter, vous pouvez utiliser le formulaire ci-dessous ou envoyer un email à <a class="link" href="mailto:contact@darkbriks-studio.fr">contact@darkbriks-studio.fr</a> :</p>
+    <form id="form" action="http://antoine-univ-littoral.alwaysdata.net/post_contact_form" method="post">
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" required><br>
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" id="prenom" name="prenom" required><br>
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message :</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+        <input id="Submit" type="submit" value="Envoyer">
+    </form>
+    <h2>Où nous trouver</h2>
+    <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.31993397578!2d2.415679215853311!3d48.8521093091027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67283d2940451%3A0xef6c8cba56620123!2s28%20Rue%20Armand%20Carrel%2C%2093100%20Montreuil!5e0!3m2!1sfr!2sfr!4v1671895783019!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+</body>
+</html>

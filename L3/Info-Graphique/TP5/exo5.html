@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>TP5 Three.js - Exo 5</title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="time-control" style="position: absolute; top: 0; left: 0; z-index: 1000; display: flex; flex-direction: row; align-items: center;">
+    <button id="minus" onclick="minus()">-</button>
+    <p id="time">1s = 1s</p>
+    <button id="plus" onclick="plus()">+</button>
+</div>
+<div id="focus-buttons" style="position: absolute; top: 0; right: 0; z-index: 1000; display: flex; flex-direction: column; align-items: center;"></div>
+
+<!-- inclusion de la librairie Three.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+
+<script src="js/mesObjets.js"></script>
+<script src="js/CelestialBody.js"></script>
+<script src="js/CelestialBodyData.js"></script>
+<script src="js/ArcballControls.js"></script>
+
+<script>
+    let timeMultiplier = 1;
+    function minus() { timeMultiplier /= 10; timeMultiplier = Math.max(timeMultiplier, 0.1); document.getElementById("time").innerHTML = "1s = " + timeMultiplier + "s"; }
+    function plus() { timeMultiplier *= 10; timeMultiplier = Math.min(timeMultiplier, 10000000); document.getElementById("time").innerHTML = "1s = " + timeMultiplier + "s"; }
+
+    // Création de la caméra
+    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.01, 10000000);
+    // placer la caméra au dessus du plan de l'écliptique
+    camera.position.set(0, 100000, 0);
+    camera.lookAt(0, 0, 0);
+
+    // création de la scène
+    const scene = new THREE.Scene();
+
+    // création du rendu
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // ajout d'un contrôleur de caméra
+    let control = new THREE.ArcballControls(camera, renderer.domElement, scene);
+
+    // Ajout d'une skybox
+    const loader = new THREE.TextureLoader();
+    loader.load('Images/2k_stars_milky_way.jpg', function (texture) {
+        texture.mapping = THREE.EquirectangularReflectionMapping;
+        scene.background = texture;
+    });
+
+    celestialBodiesData.forEach(data => { new CelestialBody(data[0], data[1], data[2], data[3]); });
+    CelestialBody.initAll();
+
+    let light = new THREE.PointLight(0xffffff, 1, 0, 2);
+    let Sun = CelestialBody.GetBodyByName('Sun');
+    Sun.mesh.add(light);
+
+    CelestialBody.GetBodyByName('Saturn').addRing({
+        ringInnerRadius: 66900,
+        ringOuterRadius: 483000,
+        ringDiffuseTextureUrl: 'Images/Saturn/saturnringcolor.jpg',
+        ringTransparencyTextureUrl: 'Images/Saturn/saturnringpattern.gif'
+    })
+
+    CelestialBody.GetBodyByName('Uranus').addRing({
+        ringInnerRadius: 36750,
+        ringOuterRadius: 103000,
+        ringDiffuseTextureUrl: 'Images/Uranus/uranusringcolour.jpg',
+        ringTransparencyTextureUrl: 'Images/Uranus/uranusringtrans.gif'
+    })
+
+    CelestialBody.focusedBody = Sun;
+
+    const clock = new THREE.Clock();
+    let elapsedTime = 0;
+    function animer() {
+        elapsedTime += clock.getDelta() * timeMultiplier;
+
+        CelestialBody.updateAllRotation(elapsedTime);
+        CelestialBody.updateAllPosition(elapsedTime);
+
+        control.update();
+        renderer.render(scene, camera);
+        requestAnimationFrame(animer);
+    }
+
+    // ajout des gestionnaires d'évènements
+    this.addEventListener('resize', function () {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    }, false);
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === '+') plus();
+        if (event.key === '-') minus();
+    });
+
+    animer();
+
+</script>
+</body>
+</html>

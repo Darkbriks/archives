@@ -1,0 +1,99 @@
+*{box-sizing: border-box}
+body{background-image: url("Image/Background.jpg"); background-attachment: fixed;}
+#Nav{width: 100%; display: flex; justify-content: space-evenly;}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 8rem;
+    color: #42D6CA;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+p {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    color: #42D6CA;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {font-family: 'Cinzel', serif; color: #42D6CA;}
+
+.link {color: #42D6CA; text-decoration: none; font-style: italic;}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33.3%;
+    border: 2px solid #42D6CA;
+    padding: 15px;
+    margin: 30px auto;
+}
+
+label {font-family: 'Cinzel', serif; color: #42D6CA;}
+
+input
+{
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 2px solid #42D6CA;
+}
+
+input::placeholder {color: #42D6CA; font-size: 1.5rem;}
+
+input:focus {outline: none;}
+
+textarea
+{
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 2px solid #42D6CA;
+    height: 100px;
+}
+
+textarea:hover {outline: none;}
+
+#Submit {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    margin: 15px;
+    background-color: #42D6CA; /* Couleur de fond */
+    border: 2px solid #42D6CA; /* Couleur de la bordure */
+    color: black; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+    text-decoration: none; /* Supprime le soulignement */
+    transition: all 0.4s;
+}
+
+#Submit:hover {background-color: transparent; color: #42D6CA;}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    color: #42D6CA;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.iframe {width: 40%; margin: 0 30%;}

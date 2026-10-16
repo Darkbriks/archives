@@ -1,0 +1,8 @@
+E id : F E'
+E' + : + F E'
+E' $ : \epsilon
+F id : G F'
+F' * : * G F'
+F' + : \epsilon
+F' $ : \epsilon
+G id : id

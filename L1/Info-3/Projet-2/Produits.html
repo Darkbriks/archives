@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Produits | Kronos 44</title>
+    <link rel="stylesheet" type="text/css" href="style_Produits.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Script.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <ul id="Nav" class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="Presentation.html">Presentation</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Produits.html">Produits</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="column1">
+        <img class="icone" src="Image/Produit_1.jpg" alt="">
+        <h3>Kronos 44 Edition Standart</h3>
+        <div class="column2">
+            <div id="txt1"><button class="button" onclick='inject_html("txt1/-/0/-/Jeu_de_base/-/false")'>Jeu de base</button></div>
+            <button class="disabled" disabled="disabled">Season pass</button>
+            <button class="disabled" disabled="disabled">Objets de collection numériques</button>
+            <button class="disabled" disabled="disabled">Contenu physique</button>
+        </div>
+    </div>
+    <div class="column1">
+        <img class="icone" src="Image/Produit_2.jpg" alt="">
+        <h3>Kronos 44 Edition Deluxe</h3>
+        <div class="column2">
+            <div id="txt2"><button class="button" onclick='inject_html("txt2/-/0/-/Jeu_de_base/-/false")'>Jeu de base</button></div>
+            <div id="txt3"><button class="button" onclick='inject_html("txt3/-/1/-/Season_pass/-/false")'>Season pass</button></div>
+            <div id="txt4"><button class="button" onclick='inject_html("txt4/-/2/-/Objets_de_collection_numériques/-/false")'>Objets de collection numériques</button></div>
+            <button class="disabled" disabled="disabled">Contenu physique</button>
+        </div>
+    </div>
+    <div class="column1">
+        <img class="icone" src="Image/Produit_3.jpg" alt="">
+        <h3>Kronos 44 Edition Coffret Collector</h3>
+        <div class="column2">
+            <div id="txt5"><button class="button" onclick='inject_html("txt5/-/0/-/Jeu_de_base/-/false")'>Jeu de base</button></div>
+            <div id="txt6"><button class="button" onclick='inject_html("txt6/-/1/-/Season_pass/-/false")'>Season pass</button></div>
+            <div id="txt7"><button class="button" onclick='inject_html("txt7/-/2/-/Objets_de_collection_numériques/-/false")'>Objets de collection numériques</button></div>
+            <div id="txt8"><button class="button" onclick='inject_html("txt8/-/3/-/Contenu_physique/-/false")'>Contenu physique</button></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+Dans le cas où les liens des pdf ne fonctionnent pas, voici la liste :
+- Keep a Changelog : https://keepachangelog.com/en/1.0.0/
+- Semantic Versioning : https://semver.org/
+- Changelog 1 : https://github.com/Darkbriks/LearningSoulsGame/blob/lsg-devellopment/CHANGELOG.MD
+- Changelog 2 : https://github.com/Darkbriks/LearningSoulsGame/blob/lsg-api/API_CHANGELOG.MD
+- Conférence : https://www.youtube.com/watch?v=6TrJc06IekE

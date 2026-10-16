@@ -1,0 +1,224 @@
+nom_real	titre_film
+Andreas Dresen	Le septieme ciel
+Anna Novion	Les grandes personnes
+Antonello Grimaldi	Caos Calmo
+Ben Stiller	Tonnere sous les tropiques
+Claude Pinoteau	La boom
+Clint Eastwood	L'?hange
+Edward Zwick	The Last Samurai
+George Lucas	Indiana Jones and the Crystal Skull
+George Lucas	Red Tails
+George Lucas	Star Wars: Episode IV - A New Hope
+Hong Sang-soo	Woman on the beach
+Pascal Thomas	Le crime est notre affaire
+René Féret	Comme une ?oile dans la nuit
+Sylvie Verheyde	Stella
+Ursula Meier	Home
+titre_film	nom_act	role_jouer
+Caos Calmo	Alessandro Gassman	second
+Caos Calmo	Nanni Moretti	apparition
+Caos Calmo	Valeria Golino	premier
+Comme une ?oile dans la nuit	Nicolas Giraud	apparition
+Comme une ?oile dans la nuit	Salomé Stéverin	second
+Comme une ?oile dans la nuit	Tom Cruise	premier
+Home	Isabelle Huppert	apparition
+Home	Jean-Pierre Darroussin	second
+Home	Olivier Gourmet	premier
+L'?hange	Angeline Jolie	premier
+L'?hange	John Malkovich	second
+La boom	Sophie Marceau	premier
+Le crime est notre affaire	André Dussolier	apparition
+Le crime est notre affaire	Annie Cordy	premier
+Le crime est notre affaire	Catherine Frot	second
+Le crime est notre affaire	Jean-Pierre Darroussin	second
+Le septieme ciel	Angeline Jolie	premier
+Le septieme ciel	Horst Westphal	second
+Le septieme ciel	Ursula Werner	premier
+Les grandes personnes	Jean-Pierre Darroussin	second
+Les grandes personnes	Judith Henry	apparition
+Stella	Benjamin Biolay	apparition
+Stella	Guillaume Depardieu	premier
+Stella	Judith Henry	apparition
+Stella	Karole Rocher	premier
+Stella	Leora Barbara	apparition
+Stella	Melissa Rodrigues	second
+The Last Samurai	Tom Cruise	premier
+Tonnere sous les tropiques	Ben Stiller	apparition
+Tonnere sous les tropiques	Jack Black	premier
+Tonnere sous les tropiques	Robert Downey Jr.	second
+Woman on the beach	Tom Cruise	premier
+nom_real	nom_act
+Andreas Dresen	Angeline Jolie
+Andreas Dresen	Horst Westphal
+Andreas Dresen	Ursula Werner
+Anna Novion	Jean-Pierre Darroussin
+Anna Novion	Judith Henry
+Antonello Grimaldi	Alessandro Gassman
+Antonello Grimaldi	Nanni Moretti
+Antonello Grimaldi	Valeria Golino
+Ben Stiller	Ben Stiller
+Ben Stiller	Jack Black
+Ben Stiller	Robert Downey Jr.
+Claude Pinoteau	Sophie Marceau
+Clint Eastwood	Angeline Jolie
+Clint Eastwood	John Malkovich
+Edward Zwick	Tom Cruise
+Hong Sang-soo	Tom Cruise
+Pascal Thomas	André Dussolier
+Pascal Thomas	Annie Cordy
+Pascal Thomas	Catherine Frot
+Pascal Thomas	Jean-Pierre Darroussin
+René Féret	Nicolas Giraud
+René Féret	Salomé Stéverin
+René Féret	Tom Cruise
+Sylvie Verheyde	Benjamin Biolay
+Sylvie Verheyde	Guillaume Depardieu
+Sylvie Verheyde	Judith Henry
+Sylvie Verheyde	Karole Rocher
+Sylvie Verheyde	Leora Barbara
+Sylvie Verheyde	Melissa Rodrigues
+Ursula Meier	Isabelle Huppert
+Ursula Meier	Jean-Pierre Darroussin
+Ursula Meier	Olivier Gourmet
+num_film	titre_film	budget_film
+10	Caos Calmo	1000000
+10	Caos Calmo	1000000
+10	Caos Calmo	1000000
+6	Comme une ?oile dans la nuit	6000000
+6	Comme une ?oile dans la nuit	6000000
+6	Comme une ?oile dans la nuit	6000000
+7	Home	3000000
+7	Home	3000000
+7	Home	3000000
+9	L'?hange	5000000
+9	L'?hange	5000000
+12	La boom	4000000
+3	Le crime est notre affaire	1000000
+3	Le crime est notre affaire	1000000
+5	Le septieme ciel	2000000
+11	Les grandes personnes	1000000
+11	Les grandes personnes	1000000
+4	Stella	4000000
+4	Stella	4000000
+4	Stella	4000000
+4	Stella	4000000
+4	Stella	4000000
+4	Stella	4000000
+1	The Last Samurai	8000000
+8	Tonnere sous les tropiques	6000000
+8	Tonnere sous les tropiques	6000000
+8	Tonnere sous les tropiques	6000000
+2	Woman on the beach	9000000
+num_film	titre_film	budget_film
+10	Caos Calmo	1000000
+6	Comme une ?oile dans la nuit	6000000
+7	Home	3000000
+9	L'?hange	5000000
+12	La boom	4000000
+3	Le crime est notre affaire	1000000
+5	Le septieme ciel	2000000
+11	Les grandes personnes	1000000
+4	Stella	4000000
+1	The Last Samurai	8000000
+8	Tonnere sous les tropiques	6000000
+2	Woman on the beach	9000000
+nom_act
+Ben Stiller
+Clint Eastwood
+Date du jour	Date décalée de 5 jours
+2023-11-15 10:55:16	2023-11-20 10:55:16
+Date du jour	Date décalée de 5 mois
+2023-11-15 10:55:16	2024-04-15 10:55:16
+Date du jour	Date décalée de 5 ans
+2023-11-15 10:55:16	2028-11-15 10:55:16
+date_projection	Date décalée de 5 mois
+2017-09-11	2018-02-11
+2017-09-11	2018-02-11
+2017-09-12	2018-02-12
+2017-09-12	2018-02-12
+2017-09-12	2018-02-12
+2017-09-12	2018-02-12
+2017-09-12	2018-02-12
+2017-09-12	2018-02-12
+2017-09-13	2018-02-13
+2017-09-13	2018-02-13
+2017-09-14	2018-02-14
+2017-09-14	2018-02-14
+2017-09-14	2018-02-14
+2017-09-17	2018-02-17
+2017-09-17	2018-02-17
+2017-09-20	2018-02-20
+2017-09-27	2018-02-27
+2017-10-01	2018-03-01
+date_projection	NOW()	Ecart
+2017-09-11	2023-11-15 10:55:16	2256
+2017-09-11	2023-11-15 10:55:16	2256
+2017-09-12	2023-11-15 10:55:16	2255
+2017-09-12	2023-11-15 10:55:16	2255
+2017-09-12	2023-11-15 10:55:16	2255
+2017-09-12	2023-11-15 10:55:16	2255
+2017-09-12	2023-11-15 10:55:16	2255
+2017-09-12	2023-11-15 10:55:16	2255
+2017-09-13	2023-11-15 10:55:16	2254
+2017-09-13	2023-11-15 10:55:16	2254
+2017-09-14	2023-11-15 10:55:16	2253
+2017-09-14	2023-11-15 10:55:16	2253
+2017-09-14	2023-11-15 10:55:16	2253
+2017-09-17	2023-11-15 10:55:16	2250
+2017-09-17	2023-11-15 10:55:16	2250
+2017-09-20	2023-11-15 10:55:16	2247
+2017-09-27	2023-11-15 10:55:16	2240
+2017-10-01	2023-11-15 10:55:16	2236
+Ecart max
+2256
+Jour de la semaine	Jour du mois	Mois	Année
+2	2	11	2023
+num_act	nom_act	anNais_act	Jour de la semaine
+22	Benjamin Biolay	1973	3
+23	Guillaume Depardieu	1971	3
+3	Judith Henry	1968	3
+20	Karole Rocher	1974	3
+19	Leora Barbara	1996	3
+21	Melissa Rodrigues	1988	3
+titre_film	nom_real	Année de naissance
+Indiana Jones and the Crystal Skull	George Lucas	NA
+Red Tails	George Lucas	NA
+Star Wars: Episode IV - A New Hope	George Lucas	NA
+La boom	Claude Pinoteau	1925
+L'?hange	Clint Eastwood	1930
+Le crime est notre affaire	Pascal Thomas	1945
+Comme une ?oile dans la nuit	René Féret	1945
+The Last Samurai	Edward Zwick	1952
+Caos Calmo	Antonello Grimaldi	1955
+Woman on the beach	Hong Sang-soo	1960
+Le septieme ciel	Andreas Dresen	1963
+Tonnere sous les tropiques	Ben Stiller	1965
+Stella	Sylvie Verheyde	1967
+Home	Ursula Meier	1971
+Les grandes personnes	Anna Novion	1979
+nom_act
+Ben Stiller
+Isabelle Adjani
+Jour	Salle	le	a	Titre
+Monday	1	2017-09-11	18:00:00	Caos Calmo
+Monday	2	2017-09-11	18:00:00	Caos Calmo
+Monday	3	2017-09-11	20:20:00	Caos Calmo
+Tuesday	1	2017-09-12	14:00:00	L'?hange
+Tuesday	1	2017-09-12	17:45:00	Woman on the beach
+Tuesday	2	2017-09-12	17:00:00	L'?hange
+Tuesday	3	2017-09-12	20:00:00	L'?hange
+Tuesday	4	2017-09-12	12:05:00	Le crime est notre affaire
+Tuesday	4	2017-09-12	16:20:00	Le crime est notre affaire
+Wednesday	1	2017-09-13	18:30:00	Les grandes personnes
+Wednesday	1	2017-09-20	18:15:00	Le septieme ciel
+Wednesday	2	2017-09-13	20:20:00	Les grandes personnes
+Wednesday	2	2017-09-20	18:15:00	Le septieme ciel
+Wednesday	3	2017-09-20	18:15:00	Tonnere sous les tropiques
+Wednesday	4	2017-09-27	20:10:00	Home
+Wednesday	5	2017-09-27	20:10:00	Home
+Thursday	3	2017-09-14	18:00:00	Stella
+Thursday	4	2017-09-14	18:00:00	Stella
+Thursday	5	2017-09-14	20:10:00	Stella
+Thursday	5	2017-09-14	22:00:00	Le crime est notre affaire
+Sunday	4	2017-09-17	17:30:00	L'?hange
+Sunday	5	2017-09-17	20:15:00	L'?hange

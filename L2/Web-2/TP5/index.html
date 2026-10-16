@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>User Information</h1>
+
+<div id="user">
+
+    <form id="user-info"
+          action="http://www.web.gregory-bourguin.fr/teaching/php/requests/ajax/00_test_REQ.php"
+          method="post">
+
+        <div id="form">
+            <div id="form-fields">
+                <label for="nickname">Nickname</label>
+                <input type="text" name="nickname" id="nickname" required>
+
+                <label for="nom-complet">Full name</label>
+                <input type="text" name="nom-complet" id="nom-complet" required>
+
+                <label for="pays">Country</label>
+                <select name="pays" id="pays" data-placeholder="Select a country..." required>
+                    <option value="33">France</option>
+                    <option value="32">Belgique</option>
+                </select>
+
+                <label for="tel">Phone number</label>
+                <input type="tel" name="tel" id="tel" required>
+            </div>
+
+            <div id="form-preview">
+                <div id="l1">
+                    <span id="emoji">&#x1F60E;</span>
+                    <span id="nickname-preview">...</span>
+                </div>
+                <div id="l2">
+                    <span id="nom-complet-preview-1">...</span>
+                    <span id="nom-complet-preview-2">...</span>
+                </div>
+                <div id="l3">
+                    <span id="pays-preview">(+...)</span>
+                    <span id="tel-preview">...</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="form-actions">
+            <input type="submit" name="submit" id="submit" value="Submit">
+            <input type="reset" name="reset" id="reset" value="Reset">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
