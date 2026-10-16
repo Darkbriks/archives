@@ -1,0 +1,293 @@
+/* $Id: styleISN.css 83 2012-06-24 09:49:46Z routier $ */
+html {
+   background-color:#F7F7F7;
+}
+
+body {
+    margin: auto;
+    width:90%;
+    padding : 8px;
+   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    /* background-image : url(./isn.png); */
+    color:#111111;
+    background-color:white;
+    border-left : 2px solid #EEEEEE;
+    border-right : 2px solid #EEEEEE;
+}
+
+/* pied de page, minimal pour le moment  */
+body:after {
+   clear :both;
+   float: right;
+   background-color:white;
+ content: url(logo-filw200.png)url(http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png);
+/* <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/"><img alt="Licence Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png" /></a>;*/
+}
+
+h1 {
+   font-size:24px;
+   color : navy;
+   font-weight : bold;
+}
+
+h2 {
+   font-size: 20px;
+   color : blue;
+   font-weight : bold;
+}
+
+#preliminaire {
+   background-color:#EEEEEE;
+   font-size: 12px;
+   margin: 0 15px;
+   padding : 20px;
+   width:80%;
+   color : black;
+   border : thin solid #BBBBBB;
+   margin : 1px;
+}
+
+.remarque {
+    font-style:italic;
+}
+
+p.format1 {
+    background-color:#CCCCCC;
+}
+
+
+li p { 				/* paragraphes inclus dans des li */
+    margin: inherit;		/* pas de marge supp. */
+}
+
+
+.italique {
+    font-size:16px;
+    font-style:italic;
+}
+
+a {
+    color: green;
+    text-decoration : underline;
+}
+
+a:visited {
+    text-decoration : none;
+}
+
+
+a:hover {
+    background-color : white;
+    text-decoration : none;
+}
+
+
+div.manip, .encadre {
+    border: thin ;
+    border-style : solid;
+    border-color : #444444;
+    border-radius : 8px;
+}
+
+div.important {
+    background-color : #FF9999;
+    border : 2px solid red;
+    color : black;
+    border-radius : 8px;
+
+}
+span.important {
+    color:white;
+    background-color:red;
+    font-weight:bold;
+    padding: 0 4px;
+    border-radius : 4px;
+}
+
+tt {
+    font-family : courier;
+}
+
+code, pre {
+    background-color : #FFFF88;
+    padding: 0 3px;
+    font-family : courier;
+    color : #0000FF;
+}
+
+pre {
+    /* width:%; */
+    margin:5px 20px;
+    padding:3px 10px;
+    border : solid thin #CCCCCC;
+}
+
+
+.manip, div.important {
+    width:70%;
+    padding : 10px;
+    margin: 5px;
+}
+
+div.manip {
+    background-color : #EEEEEE;
+    counter-increment: nummanip;
+    margin-top: 5px;
+}
+div.manip:before {
+    content: "Manip' " counter(nummanip, decimal)". ";
+    color: #222222;
+    font-weight:bold;
+
+}
+
+/* IMAGES */
+img {
+    margin: 10px;
+}
+.bornee, .w600 {
+    width:600px;
+}
+
+.w200 {
+    width:200px;
+}
+.w400 {
+    width:400px;
+}
+.vignette64 {
+    width:64px;
+}
+.droite {
+    float: right;
+}
+
+/* FIN IMAGES */
+
+
+.commjs {
+    font-style:italic;
+}
+
+pre.poeme {
+    clear :both;
+    border-style: dotted;
+    border-width: 1px;
+    float: right;
+    width:20%;
+    font-size:small;
+    background-color: #FFEEEE;
+    color: #333333;
+}
+
+div.correction:before {
+    content: "/!\\ Correction /!\\ ";
+    color: #222222;
+    font-weight:bold;
+
+}
+
+.correction {
+    margin:5px 20px;
+    padding:3px 10px;
+    border : solid thin #8888FF;
+    background-color: #CCCCFF;
+    border-radius : 8px;
+
+}
+
+
+.specif {
+    margin : 10px;
+    padding : 10px;
+    width:50%;
+    border:thin solid #999999;
+    background-color: white;
+}
+
+.equation {
+    border-collapse:separate;
+    border-spacing:12px;
+    width:auto; 
+    border:none;
+    white-space:nowrap;
+    padding:0px 20px;
+    margin:0ex auto;    
+}
+
+.underline {
+    text-decoration:underline;
+}
+
+/* Commentaires des rédacteurs, destinés aux rédacteurs.
+   Devraient disparaître dans la version finale. */
+.comment {
+    background-color: #F4FF3A;
+}
+.todo {
+    background-color: #F4FFFA;
+}
+.todo:before {
+    content: "/!\\ TODO /!\\ ";
+    color: red;
+    font-weight:bold;
+}
+.comment, .todo {
+    clear :both;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FF456A;
+    float: right;
+    margin: 5px;
+    margin-right:0px;
+
+    padding: 5px;
+    width: 30%;
+    font-style:oblique;
+    border-radius : 8px;
+}
+.comment i {
+    font-style : normal;
+}
+
+
+.aparte {
+    clear: both;
+    display: block;
+    background-color: #77FF77;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #00FF00;
+    float: right;
+    font-size: smaller;
+    margin: 5px;
+    margin-right:0px;
+
+    padding: 5px;
+    width: 30%;
+    font-style:italic;
+    border-radius : 8px;
+}
+
+.aparte i, .aparte em {
+    font-style : normal;
+}
+
+.aparte a {
+    color: blue;		/* background is #77FF77 ~ green*/
+}
+
+#buttonAparte {
+    float: right;
+    color:white;
+    background-color:green;
+    padding: 0 4px;
+    border-radius : 4px;
+    border : 2px solid white;    
+}
+
+#buttonAparte:hover {
+    border : 2px solid darkgreen;    
+    color : green;
+    background-color:white;
+}

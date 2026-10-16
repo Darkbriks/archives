@@ -1,0 +1,31 @@
+name: binary increment
+source code: |
+  # Adds 1 to a binary number.
+  input: '111'
+  blank: ' '
+  start state: right
+  table:
+    # scan to the rightmost digit
+    right:
+      [1,0]: {R}
+      ' '  : {write: 0, R: done}
+      
+    done:
+
+
+  # Exercises:
+
+  # • Modify the machine to always halt on the leftmost digit
+  #   (regardless of the number's length).
+  #   Hint: add a state between carry and done.
+
+  # • Make a machine that adds 2 instead of 1.
+  #   Hint: 2 is '10' in binary, so the last digit is unaffected.
+  #   Alternative hint: chain together two copies of the machine from
+  #   the first exercise (renaming the states of the second copy).
+
+  # • Make a machine to subtract 1.
+  #   To simplify things, assume the input is always greater than 0.
+positions:
+  right: {x: 230, y: 250}
+  done: {x: 689.08, y: 250}

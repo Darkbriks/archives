@@ -1,0 +1,10 @@
+from turtle import*
+up()
+goto(-50,-100)
+down()
+forward(50)
+pencolor('red')
+up()
+goto(0,0)
+down()
+forward(200)

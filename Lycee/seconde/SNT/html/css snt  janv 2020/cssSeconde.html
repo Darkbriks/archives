@@ -1,0 +1,333 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title> Les feuilles de style  </title>
+    <meta name="author" content="Routier-lille 1/Wozniak-Ribot" />
+
+    <link href="sourceStyleISN.css" rel="stylesheet" type="text/css" media="screen"/>
+
+    
+
+  </head>
+  <body>
+
+
+<h1> Des pages html qui ont du style  </h1> 
+
+<div class="manip">
+<ol>
+<li>Rendez-vous sur la page
+  du <a href="http://www.csszengarden.com/">CSS Zen garden</a> (ou sur
+  la <a href="http://www.csszengarden.com/tr/francais/">page de la
+  version française</a>, mais dont la traduction automatique est
+  parfois étrange...).</li>
+<li>A partir de cette page visitez quelques pages référencées dans la
+  rubrique <i>select a design</i> (ou <i>choisissez une
+  conception</i>) dans le bandeau de droite. Après en avoir consulté
+  quelques-unes vous devriez avoir rencontré des styles <b>très</b> differents. 
+</li>
+<li>Sélectionnez et ouvrez deux de ces pages dans des onglets séparés
+  et pour chacune d'entre elles consultez-en  le code
+  source. Rappelons qu'il suffit d'un clic droit sur la page puis de
+  choisir <i>Code source de la page</i>.
+</li>
+<li>Comparez les codes source de ces deux pages. </li>
+<li>Que constatez-vous&nbsp;? Quelle(s) différence(s) entre les deux&nbsp;?
+  Si vous n'en trouvez aucune, cherchez le contenu des
+  balises <code>&lt;style&gt;</code> dans les parties <code>head</code>.
+</ol>
+</div>
+
+<p>
+Vous venez de le constater l'application de feuilles de style à un
+document html permet d'en modifier sensiblement l'apparence. La
+séparation du fond et de la forme est à nouveau respectée. Le
+fond se trouve dans le document au format html et la forme est définie
+dans un fichier écrit dans un format
+appelé <span class="important">css</span>, pour <i>Cascading Style
+    Sheets</i>&nbsp;: <i>feuilles de style en cascade</i>. 
+</p>
+
+<p>
+Un style est défini par un ensemble de propriétés qui caractérisent l'apparence que
+prendront les éléments auxquels il s'applique. Il va être possible d'agir sur les styles des
+caractères, les tailles d'affichage, les marges, etc.
+</p>
+
+
+<h2> Les bases </h2>
+
+
+<p>
+La structure et les éléments d'une page html sont définis par les balises. C'est donc
+sur ces éléments balises que porte un style défini par
+un ensemble de couples <i>(propriété,valeur)</i>. Le langage CSS
+définit la syntaxe d'écriture de ces styles. Celle-ci est
+simple&nbsp;: on précise le type d'élément concerné, puis on énumère
+entre accolade et séparés par des <code>;</code> les couples sous le
+forme <code><i>propriété : valeur</i></code>. Il "suffit" donc de
+    connaître les propriétés qui s'appliquent à l'élément concerné et
+    les valeurs possibles. 
+</p>
+
+<p>Voici un premier exemple de style qui s'applique aux éléments
+  marqués par les balises <code>h2</code></p>
+
+<pre>
+h1 {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+   font-size: 16px;
+   color: yellow;
+   background-color: red; 
+}
+
+</pre> 
+
+<p>On comprend sans difficulté les propriétés utilisées et leurs
+  valeurs&nbsp;: la taille de la police fixée à 16px, la couleur
+  d'écriture fixée à la constante prédéfinie <code>yellow</code> et la
+  couleur d'arrière-plan fixée à <code>red</code>.
+</p>
+
+<p>Pour appliquer ce style à un document html, il faut respecter les étapes syuivantes :</p>
+<ol>
+<li>Créer un fichier contenant ce code, sur notepad++.</li>
+<li>Sauvegardez ce texte dans un fichier que vous appellerez <code>styleCSS1.css</code>dans le même
+  dossier .</li>
+<li>Il faut ensuite préciser dans le document html que l'on souhaite
+  utiliser cette feuille de style. Il faut ajouter dans la partie <code>head</code> de la page html la
+  ligne&nbsp;:
+<pre>
+   &lt;link href="styleCSS1.css" rel="stylesheet" type="text/css"/&gt;
+</pre></li>
+</ol>
+
+<div class="manip">
+  Prenez un document de votre choix contenant des balises h1, h2 ,...une  fiche sur les grands noms des mathématiques 
+  ou de l'informatique. 
+  Appliquez-lui la feuille de style du fichier <code>styleCSS1.css</code> (que vous aurez placé dans le même
+  dossier) et visualisez le résultat.
+</div>
+
+<p>
+L'essentiel est là. Il faut maintenant connaître les propriétés et
+leurs valeurs et sans doute avoir un peu de sens créatif pour
+obtenir des pages plus esthétiques.
+</p>
+
+
+
+<div class="manip">
+  Voici des définitions de style complémentaires&nbsp;:
+<pre>
+p {
+  color:green;
+}
+
+h1 {
+  color:white;
+  background-color:black;
+}
+
+</pre>
+<ol>
+<li>
+Ajoutez-les à la suite des précédentes dans le
+fichier <code>styleCSS1.css</code> et visualisez le résultat.</li>
+</ol>
+</div>
+
+
+<p>
+Vous avez certainement remarqué que lors de l'application de la
+feuille de style actuellement, la couleur des textes des
+éléments <code>ul</code> diffère de celle des éléments <code>p</code>.
+Ce qui est bien évidemment cohérent avec les déclarations qui ont été
+faites. Si nous souhaitons leur attribuer la même couleur une première
+solution serait d'ajouter la définition&nbsp;:
+</p>
+<pre>
+ul {
+  color:green;
+}
+</pre>
+
+<p>
+Cette solution a cependant le défaut que si l'on souhaite que les
+éléments <code>p</code> et <code>ul</code> aient toujours la même
+couleur et que l'on est ammené à  modifier leur couleur, il faudra
+faire deux modifications en prenant soin de ne pas faire d'erreur. De
+plus si en plus de la couleur on souhaite que ces éléments aient
+d'autres propriétés en commun, comme la taille de la police par
+exemple, on sera amené à dupliquer toutes les définitions communes ce
+qui à nouveau est source d'erreur dans la gestion de la
+cohérence. Pour éviter ce problème il est possible de définir des
+propriétés pour plusieurs éléments simultanément, il suffit d'énumérer
+ces éléments avant les propriétés comme ceci&nbsp;:
+</p>
+
+<pre>
+p , ul {                      /* <em>les éléments <em>p</em> et <em>ul</em></em>                         */
+  color:olive;      /* <em>  auront la même couleur</em>                     */  
+  font-size : 12pt;         /* <em>  et la même taille de police</em>                */
+}
+</pre>
+
+<p>Comme on a vu que les propriétés d'un élément pouvaient être
+  définies en plusieurs fois, rien n'empêche d'avoir en plus de ces
+  définitions communes des propriétés dont les valeurs sont propres à
+  chacun de ces deux éléments.
+</p> 
+
+<h3>Apprentissage par l'exemple et auto-documentation</h3>
+
+<p>Une bonne partie de l'apprentissage du langage CSS peut se faire
+progressivement et par l'exemple. Vous avez certainement deviné assez
+  facilement la sémantique des différentes propriétés et valeurs
+  utilisées ci-dessus.
+
+
+ Il faut aussi très largement bénéficier des ressources sur le web à
+l'aide de recherche pertinente.
+</p>
+
+<div class="manip">
+Recherchez les valeurs possibles de la
+propriété <code>font-weight</code>. 
+
+ <br/>Les mots-clés "<i>css font-weight</i>" devrait suffire et le
+site <a href="http://www.w3schools.com/cssref/">w3schools</a> convient
+le plus souvent pour une première description.
+</div>
+
+<div class="manip">
+Recherchez les valeurs possibles de la
+propriété <code>font-size</code>.  Remarquez les différentes manières
+de noter les valeurs.  <br/>
+</div>
+
+
+<h2>Quelques autres propriétés</h2>
+
+<h3>Les hyperliens</h3>
+<p>Les hyperliens sont marqués dans une page html par une
+  balise <code>a</code>. Comme toute balise on peut lui appliquer un
+  style, par exemple&nbsp;:
+</p>
+
+<pre>
+a {
+  color : red;
+  text-decoration : underline ;
+}
+</pre>
+
+<div class="manip">
+  Ajoutez cette définition à votre feuille de style et testez.
+</div>
+
+
+
+
+<h3>Alignements</h3>
+
+<p>Comme l'indique son nom la propriété <code>text-align</code> permet de
+  fixer l'alignement du texte d'un élément.</p>
+
+<div class="manip">
+<ol>
+<li>Recherchez les différentes valeurs que peut prendre cette propriété.</li>
+<li>Testez ces différentes valeurs sur les styles des
+  éléments <code>h1</code>, <code>h2</code> et <code>p</code> de la
+  feuille <code>styleCSS1.css</code></li>
+</ol>
+</div>
+
+<h3> Arrière-plan </h3>
+
+<p>Vous avez déjà pu observer le comportement de la
+  propriété <code>background-color</code>. Il est également possible
+  de placer une image en arrière plan d'un élément (pas uniquement de
+  la page).</p>
+
+<div class="manip">
+  <ol>
+<li>Cherchez de la documentation sur la
+  propriété <code>background-image</code>. Exemple :
+  <pre>background-image : url(./fondNoel.gif).</pre>
+</li>
+<li>testez-en le fonctionnement en plaçant une image de fond pour les
+  éléments <code>body</code> et <code>p</code> de votre page</li>
+<li>Cherchez de la documentation sur la
+  propriété <code>background-repeat</code>.</li>
+<li>Testez le comportement des différentes valeurs que peut prendre
+  cette propriété.</li>
+<li>De même, testez  : <code>background-attachment :fixed
+</code>ou<code>background-size :50%50%</code>.</li>
+
+</ol>
+</div>
+
+
+
+
+
+
+
+<div class="aparte">
+Le terme <i>Cascade</i> de l'acronyme <i>CSS</i> signifie que certaines
+propriétés d'un élément s'appliquent sur les autres éléments qu'il
+contient (on rencontre le terme d'<i>héritage</i> de propriété pour
+évoquer cette notion).
+<br/>Ainsi si on attribue une valeur à  la
+propriété <code>background-color</code> de l'élément <code>body</code>
+cette valeur est "automatiquement" reprise par les éléments
+(<code>h1</code> ou <code>p</code> par exemple) contenu dans cet
+élément, c'est-à-dire écrits entre les
+balises <code>&lt;body&gt;</code> et <code>&lt;/body&gt;</code>.
+A moins bien sûr que cette propriété ne soit explicitement redéfinie
+pour un de ces éléments.
+<br/>Vous serez peut-être amenés dans les documentations que vous
+lirez à rencontrer le terme d'<i>élément parent</i>. Ce terme désigne
+l'élément dans lequel est contenu l'élément
+considéré&nbsp;: <code>body</code> est l'élément parent des
+balises <code>h1</code> dans votre document.
+</div>
+<div class="manip">
+<ol>
+<li>  Ajoutez à votre feuille initiale les styles&nbsp;:
+<pre>
+html {
+   background-color:pink;
+}
+body {
+  background-color:gray;
+  width : 90%;
+}
+
+</pre>
+Testez.
+</li>
+</div>
+
+
+<h2>Au fait, pourquoi faire des feuilles de style ?</h2>
+<ul>
+	<li>réduire la taille des pages : les définitions de style ne sont faites qu'une seule fois, même
+	si elles sont utilisées plusieurs fois.</li>
+	<li>mise à jour plus facile : on  se contente de changer la feuille de style pour l'ensemble du site</li>
+	<li>séparer le travail sur le fond et le travil sur la forme</li>
+</ul>
+
+
+ </body>
+</html>

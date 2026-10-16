@@ -1,0 +1,26 @@
+@startuml
+object Client
+object "Abonné" as Abonne
+object Film
+object "Blu-ray" as DVD
+object "QR code" as QRCode
+object Catalogue
+object wishListGlobal
+object Technicien
+' Aboone is a client
+Abonne --|> Client
+
+' A Movie is either physical or QR code
+QRCode -up-|> Film
+DVD --|> Film
+AL2000 o-- Film : gère >
+Client "1" -- "1" Film : loue >
+Film "0..3" o-- "1" Abonne : Loue
+Client "0..*" o-- "1" Catalogue : Consulter >
+Client "0..*" o-- "1" wishListGlobal : Consulter >
+Client "0..*" -- "1" Film : "Déclarer abîmé" >
+Client "1" -- "0..*" DVD : "Rendre" >
+' Technicien "1" -- "0..*" AL2000 : "Ajouter Film/Retirer Film" >
+Technicien "1" -- "0..*" DVD : "Vérifier état" >
+
+@enduml

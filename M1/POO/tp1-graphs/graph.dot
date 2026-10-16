@@ -1,0 +1,21 @@
+digraph {
+
+	A -> B [ label=7 ];
+	A -> C [ label=9 ];
+	A -> D [ label=14 ];
+	B -> A [ label=7 ];
+	B -> C [ label=10 ];
+	B -> E [ label=15 ];
+	C -> A [ label=9 ];
+	C -> B [ label=10 ];
+	C -> D [ label=2 ];
+	C -> E [ label=11 ];
+	D -> A [ label=14 ];
+	D -> C [ label=2 ];
+	D -> F [ label=9 ];
+	E -> B [ label=15 ];
+	E -> C [ label=11 ];
+	E -> F [ label=6 ];
+	F -> D [ label=9 ];
+	F -> E [ label=6 ];
+}
